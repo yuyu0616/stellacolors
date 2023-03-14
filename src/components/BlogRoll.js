@@ -23,7 +23,7 @@ const BlogRollTemplate = (props) => {
                   <div className="featured-thumbnail">
                     <PreviewCompatibleImage
                       imageInfo={{
-                        image: post.frontmatter.featuredimage,
+                        image: post?.frontmatter?.featuredimage,
                         alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                         width:
                           post.frontmatter.featuredimage.childImageSharp
