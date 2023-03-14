@@ -19,8 +19,7 @@ const BlogRollTemplate = (props) => {
               }`}
             >
               <header>
-                {post?.frontmatter ?
-                post?.frontmatter?.featuredimage && (
+                {post?.frontmatter?.featuredimage && (
                   <div className="featured-thumbnail">
                     <PreviewCompatibleImage
                       imageInfo={{
@@ -35,7 +34,7 @@ const BlogRollTemplate = (props) => {
                       }}
                     />
                   </div>
-                ) : null}
+                ) }
                 <p className="post-meta">
                   <Link
                     className="title has-text-primary is-size-4"
