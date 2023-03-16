@@ -244,15 +244,15 @@ collections:
                   },
                 ],
             }
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+      - file: "src/pages/test/index.md"
+        label: "Test"
+        name: "test"
         fields:
           - {
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "about-page",
+              default: "test-page",
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
