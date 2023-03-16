@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
     {gridItems.map((item) => (
-      item?.link ? 
+      item.link ? 
         <Link to={item.link}>
           <GridCard item={item} />
         </Link>
