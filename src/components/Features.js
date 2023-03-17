@@ -6,34 +6,32 @@ import { Link } from "gatsby";
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
     {gridItems.map((item) => (
-      item.link ?
-        <Link to={item.link}>
-          <GridCard item={item} />
-        </Link>
-        : <GridCard item={item} />
+      <GridCard item={item} />
     ))}
   </div>
 );
 
 const GridCard = ({ item }) => (
   <div key={item.text} className="column is-6">
-    <section className="section">
-      <div className="has-text-centered">
-        <div
-          style={{
-            width: "240px",
-            display: "inline-block",
-          }}
-        >
-          <PreviewCompatibleImage imageInfo={item} />
+    <Link to={item.link}>
+      <section className="section">
+        <div className="has-text-centered">
+          <div
+            style={{
+              width: "240px",
+              display: "inline-block",
+            }}
+          >
+            <PreviewCompatibleImage imageInfo={item} />
+          </div>
         </div>
-      </div>
-      <p
-        style={{
-          textDecoration: "none"
-        }}
-      >{item.text}</p>
-    </section>
+        <p
+          style={{
+            textDecoration: "none"
+          }}
+        >{item.text}</p>
+      </section>
+    </Link>
   </div>
 )
 
