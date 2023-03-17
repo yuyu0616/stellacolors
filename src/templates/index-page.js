@@ -11,9 +11,7 @@ import FullWidthImage from "../components/FullWidthImage";
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
-  title,
-  mainpitch,
-  description,
+  heading,
   intro,
 }) => {
   const heroImage = getImage(image) || image;
@@ -65,9 +63,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
-        title={frontmatter.title}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
+        heading={frontmatter.heading}
         intro={frontmatter.intro}
       />
     </Layout>
@@ -88,17 +84,12 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
         image {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
           }
         }
-        mainpitch {
-          title
-          description
-        }
-        description
+        heading
         intro {
           blurbs {
             image {
