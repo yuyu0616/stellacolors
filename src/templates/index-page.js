@@ -29,11 +29,8 @@ export const IndexPageTemplate = ({
                 <div className="content">
                   <div className="content">
                     <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
+                      <h1 className="title">{heading}</h1>
                     </div>
-                    {/* <div className="tile">
-                      <h3 className="subtitle">{mainpitch.description}</h3>
-                    </div> */}
                   </div>
                   <Features gridItems={intro.blurbs} />
                   <div className="columns">
@@ -55,9 +52,7 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
+  heading: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
