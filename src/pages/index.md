@@ -1,11 +1,11 @@
 ---
 templateKey: index-page
 title: StellaColors
-image: /img/animal_chara_radio_penguin.png
+image: /img/23_20230202182213.png
 heading: test
 subheading: それぞれの色を輝かせるユニット
 mainpitch:
-  title: あｓｄ
+  title: 新着情報
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. We source all of our beans
