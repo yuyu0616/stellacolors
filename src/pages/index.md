@@ -1,7 +1,5 @@
 ---
 templateKey: index-page
-image: /img/23_20230202182213.png
-heading: test
 intro:
   blurbs:
     - image: /img/coffee.png
