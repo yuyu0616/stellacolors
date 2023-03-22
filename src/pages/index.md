@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
-image: /img/jumbotron.jpg
-heading: Great coffee with a conscience
+image: /img/23_20230202182213.png
+heading: 新着情報
 intro:
   blurbs:
     - image: /img/coffee.png
