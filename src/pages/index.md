@@ -1,5 +1,7 @@
 ---
 templateKey: index-page
+image: /img/jumbotron.jpg
+heading: Great coffee with a conscience
 intro:
   blurbs:
     - image: /img/coffee.png
