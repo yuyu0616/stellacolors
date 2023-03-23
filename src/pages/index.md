@@ -1,12 +1,11 @@
 ---
 templateKey: index-page
 image: /img/23_20230202182213.png
-whatsnew: 
+whatsnew:
   item:
-    - text: >
-        test
+    - text: ｓｓｓｓｓｓｓｓｓ
       link: https://google.com
-    - text: >
-        test
+    - text: ああああああああああ
       link: https://google.com
+  heading: 新着情報
 ---
