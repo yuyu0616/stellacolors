@@ -68,6 +68,12 @@ collections:
                   },
                 ],
             }
+          - {
+              label: "whatsnew",
+              name: "whatsnew",
+              widget: "list",
+              default: ["news"]
+            }
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"

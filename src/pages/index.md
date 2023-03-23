@@ -36,4 +36,5 @@ intro:
         sale. The full price you pay goes to the artist.
       link: https://google.com
   heading: What we offer
+whatsnew: ["test", "test2"]
 ---
