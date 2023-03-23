@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 import ItemList from "../components/ItemList";
+import MovieList from "../components/MovieList";
 
 import Layout from "../components/Layout";
 import FullWidthImage from "../components/FullWidthImage";
@@ -22,7 +23,7 @@ export const IndexPageTemplate = ({
         <div className="container">
           <div className="section">
               <ItemList items={whatsnew.item} />
-              <ItemList items={movies} />
+              <MovieList items={movies} />
           </div>
         </div>
       </section>
