@@ -27,4 +27,4 @@ MovieList.propTypes = {
     )
 }
 
-export default MOvieList;
+export default MovieList;
