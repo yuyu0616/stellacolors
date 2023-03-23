@@ -1,13 +1,11 @@
 ---
 templateKey: index-page
 image: /img/23_20230202182213.png
-whatsnew: 
+whatsnew:
   item:
-    - text: >
-        test
+    - text: ｓｓｓｓｓjgasdl;j
       link: https://google.com
-    - text: >
-        test
+    - text: ああああああああああ
       link: https://google.com
 movies: 
   - url: `youtube:https://www.youtube.com/embed/g06dGwxsl7M`
