@@ -10,7 +10,8 @@ import FullWidthImage from "../components/FullWidthImage";
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
-  whatsnew
+  whatsnew,
+  movies,
 }) => {
   const heroImage = getImage(image) || image;
 
@@ -21,6 +22,7 @@ export const IndexPageTemplate = ({
         <div className="container">
           <div className="section">
               <ItemList items={whatsnew.item} />
+              <ItemList items={movies} />
           </div>
         </div>
       </section>
@@ -33,6 +35,7 @@ IndexPageTemplate.propTypes = {
   whatsnew: PropTypes.shape({
     item: PropTypes.array,
   }),
+  movies: PropTypes.array,
 };
 
 const IndexPage = ({ data }) => {
@@ -43,6 +46,7 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         whatsnew={frontmatter.whatsnew}
+        movies={frontmatter.movies}
       />
     </Layout>
   );
@@ -72,6 +76,9 @@ export const pageQuery = graphql`
             text
             link
           }
+        }
+        movies {
+          url
         }
       }
     }
