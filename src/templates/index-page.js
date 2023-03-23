@@ -4,15 +4,12 @@ import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
   heading,
-  intro,
 }) => {
   const heroImage = getImage(image) || image;
 
@@ -30,7 +27,6 @@ export const IndexPageTemplate = ({
                       <h1 className="title">{heading}</h1>
                     </div>
                   </div>
-                  <Features gridItems={intro.blurbs} />
                   <div className="columns">
                     <div className="column is-12 has-text-centered">
                       <Link className="btn" to="/products">
@@ -51,9 +47,6 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   heading: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
 };
 
 const IndexPage = ({ data }) => {
@@ -64,7 +57,6 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         heading={frontmatter.heading}
-        intro={frontmatter.intro}
       />
     </Layout>
   );
@@ -90,19 +82,6 @@ export const pageQuery = graphql`
           }
         }
         heading
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-              }
-            }
-            text
-            link
-          }
-          heading
-          description
-        }
       }
     }
   }
