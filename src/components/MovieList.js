@@ -1,17 +1,14 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
+import Youtube from "react-youtube";
 
 const MovieList = ({ items }) => (
     <div>
         {
             items.map((item) => (
                 <div key={item.url}>
-                    <Link to={item.url}>
-                        <section className="section">
-                            <p>{item.url}</p>
-                        </section>
-                    </Link>
+                    <Youtube videoId={item.url} />
                 </div>
             ))
         }
