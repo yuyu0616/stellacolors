@@ -4,8 +4,8 @@ import { Link } from "gatsby";
 import Youtube from "react-youtube";
 
 const opts = {
-    height: 360,
-    width: 640
+    height: 180,
+    width: 320
 }
 
 const MovieList = ({ items }) => (
