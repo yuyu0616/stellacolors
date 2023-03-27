@@ -11,16 +11,20 @@ const opts = {
 const MovieList = ({ items }) => (
     <div>
         {
-            items.map((item) => (
+            items.map((item) => {
+                const splitURL = item?.url.split('/');
+                const url = splitURL[splitURL.length - 1];
+                return (
                 <div
                     style={{
                         padding: 1,
                         border: `1px solid #dcdcdc`
                     }}
-                    key={item.url}>
-                    <Youtube videoId={item.url} opts={opts}/>
+                    key={url}>
+                    <Youtube videoId={url} opts={opts} />
                 </div>
-            ))
+                );
+            })
         }
     </div>
 )
