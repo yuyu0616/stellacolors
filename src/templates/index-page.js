@@ -21,13 +21,25 @@ export const IndexPageTemplate = ({
       <FullWidthImage img={heroImage} />
       <section className="section section--gradient">
         <div className="container">
-          <p>What's new</p>
+          <p
+            style={{
+              fontSize: 32,
+              fontWeight: "bold",
+              color: "white"
+            }}
+          >What's new</p>
           <ItemList items={whatsnew.item} />
         </div>
       </section>
       <section className="section section--gradient">
         <div className="container">
-          <p>動画</p>
+          <p
+            style={{
+              fontSize: 32,
+              fontWeight: "bold",
+              color: "white"
+            }}
+          >動画</p>
           <MovieList items={movies} />
         </div>
       </section>
