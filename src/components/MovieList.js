@@ -9,7 +9,12 @@ const opts = {
 }
 
 const MovieList = ({ items }) => (
-    <div>
+    <div
+        style={{
+            display: "flex",
+            flexDirection: "column"
+        }}
+    >
         {
             items.map((item) => {
                 const splitURL = item?.url.split('/');
