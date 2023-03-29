@@ -20,14 +20,7 @@ const MovieList = ({ items }) => (
                 const splitURL = item?.url.split('/');
                 const url = splitURL[splitURL.length - 1];
                 return (
-                <div
-                    style={{
-                        padding: 1,
-                        border: `1px solid #dcdcdc`
-                    }}
-                    key={url}>
-                    <Youtube videoId={url} opts={opts} />
-                </div>
+                    <Youtube videoId={url} opts={opts} key={url} />
                 );
             })
         }

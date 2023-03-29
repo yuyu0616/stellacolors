@@ -18,13 +18,17 @@ export const IndexPageTemplate = ({
 
   return (
     <div>
-      <FullWidthImage img={heroImage}  />
+      <FullWidthImage img={heroImage} />
       <section className="section section--gradient">
         <div className="container">
-          <div className="section">
-              <ItemList items={whatsnew.item} />
-              <MovieList items={movies} />
-          </div>
+          <p>What's new</p>
+          <ItemList items={whatsnew.item} />
+        </div>
+      </section>
+      <section className="section section--gradient">
+        <div className="container">
+          <p>動画</p>
+          <MovieList items={movies} />
         </div>
       </section>
     </div>
