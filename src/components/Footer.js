@@ -6,6 +6,7 @@ import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
 import vimeo from "../img/social/vimeo.svg";
+import youtube from "../img/social/youtube.png";
 
 const Footer = () => {
   
@@ -96,10 +97,10 @@ const Footer = () => {
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-                <a title="vimeo" href="https://vimeo.com">
+                <a title="youtube" href="https://youtube.com">
                   <img
-                    src={vimeo}
-                    alt="Vimeo"
+                    src={youtube}
+                    alt="youtube"
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
