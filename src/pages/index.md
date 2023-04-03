@@ -7,7 +7,9 @@ whatsnew:
       link: https://google.com
     - text: ああああああああああ
       link: https://google.com
-movies: 
-  - url: youtube:https://www.youtube.com/embed/g06dGwxsl7M
-  - url: youtube:https://www.youtube.com/embed/g06dGwxsl7M
+  heading: test
+movies:
+  - url: https://www.youtube.com/embed/g06dGwxsl7M
+  - url: https://www.youtube.com/embed/g06dGwxsl7M
+  - url: https://www.youtube.com/embed/g06dGwxsl7M
 ---
