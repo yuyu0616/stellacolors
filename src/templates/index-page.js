@@ -25,7 +25,7 @@ export const IndexPageTemplate = ({
           flexWrap: "wrap",
         }}
       >
-        <section style={{ width: "50%" }} className="section section--gradient">
+        <section style={{ width: "50%", padding: 8, backgroundColor: "rgba(255,255,255,0.7)" }} className="section section--gradient">
           <div className="container">
             <p
               style={{
@@ -37,7 +37,7 @@ export const IndexPageTemplate = ({
             <ItemList items={whatsnew.item} />
           </div>
         </section>
-        <section style={{ width: "50%" }} className="section section--gradient">
+        <section style={{ width: "50%", padding: 8, backgroundColor: "rgba(255,255,255,0.7)" }} className="section section--gradient">
           <div className="container">
             <p
               style={{
