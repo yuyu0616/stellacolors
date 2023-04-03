@@ -17,6 +17,7 @@ const MovieList = ({ items }) => (
     >
         {
             items.map((item) => {
+                console.log({item});
                 if(item === undefined && item?.url.length >= 0){
                     return "";
                 }
