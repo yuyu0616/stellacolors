@@ -32,17 +32,17 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link className="navbar-item" to="/about">
-                        About
+                        メンバー紹介
                       </Link>
                     </li>
                     <li>
                       <Link className="navbar-item" to="/products">
-                        Products
+                        イベント情報
                       </Link>
                     </li>
                     <li>
                       <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
+                        グッズ情報
                       </Link>
                     </li>
                     <li>
@@ -63,12 +63,12 @@ const Footer = () => {
                   <ul className="menu-list">
                     <li>
                       <Link className="navbar-item" to="/blog">
-                        Latest Stories
+                        新着情報
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
+                      <Link className="navbar-item" to="/movie">
+                        動画
                       </Link>
                     </li>
                   </ul>
@@ -97,7 +97,7 @@ const Footer = () => {
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-                <a title="youtube" href="https://youtube.com">
+                <a title="youtube" href="https://www.youtube.com/@StellaColors">
                   <img
                     src={youtube}
                     alt="youtube"
