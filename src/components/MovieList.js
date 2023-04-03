@@ -17,6 +17,9 @@ const MovieList = ({ items }) => (
     >
         {
             items.map((item) => {
+                if(item === undefined){
+                    return null;
+                }
                 const splitURL = item?.url.split('/');
                 const url = splitURL[splitURL.length - 1];
                 return (
