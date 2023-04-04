@@ -43,7 +43,7 @@ export const IndexPageTemplate = ({
             <ItemList items={whatsnew.item} />
           </div>
         </section>
-        <section style={{ width: "50%", boxSizing: "border-box", margin: 16, padding: 8, backgroundColor: "rgba(255,255,255,0.7)" }} className="section section--gradient">
+        <section style={{ width: "50%", boxSizing: "border-box", padding: 8 }} className="section section--gradient">
           <div
             style={{
               margin: 16,
