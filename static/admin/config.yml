@@ -34,17 +34,18 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
   - name: "movie"
     label: "Movie"
-    folder: "src/pages/movie"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields: 
-      - {
-        label: "Template Key",
-        name: "templateKey",
-        widget: "hidden",
-        default: "movie-post"
-      }
-      - { label: "Title", name: "title", widget: "string" }
+    files:
+      - file: "src/pages/movie/index.md"
+        label: "movie"
+        name: "movie"
+        fields: 
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "movie-post"
+            }
+          - { label: "Title", name: "title", widget: "string" }
   - name: "pages"
     label: "Pages"
     files:
