@@ -65,7 +65,7 @@ const MoviePost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Movie">
+          <Helmet titleTemplate="Movie">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
@@ -94,10 +94,10 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         title
-        description
-        tags
+        movies {
+          url
+        }
       }
     }
   }

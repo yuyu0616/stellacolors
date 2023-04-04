@@ -46,6 +46,15 @@ collections:
               default: "movie-post"
             }
           - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: Movies,
+              name: movies,
+              widget: list,
+              fields:
+              [
+                { label: Url, name: url, widget: text },
+              ]
+            }
   - name: "pages"
     label: "Pages"
     files:
