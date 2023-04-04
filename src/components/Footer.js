@@ -2,9 +2,10 @@ import * as React from "react";
 import { Link } from "gatsby";
 
 import logo from "../img/biglogo.png";
-import instagram from "../img/social/instagram.svg";
-import twitter from "../img/social/twitter.svg";
+import twitter from "../img/social/twitter.png";
 import youtube from "../img/social/youtube.png";
+import tiktok from "../img/social/tiktok.png";
+import live from "../img/social/live.png";
 
 const Footer = () => {
   
@@ -81,10 +82,10 @@ const Footer = () => {
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-                <a title="instagram" href="https://instagram.com">
+                <a title="tiktok" href="https://tiktok.com/stellacolors">
                   <img
-                    src={instagram}
-                    alt="Instagram"
+                    src={tiktok}
+                    alt="tiktok"
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
@@ -92,6 +93,13 @@ const Footer = () => {
                   <img
                     src={youtube}
                     alt="youtube"
+                    style={{ width: "1em", height: "1em" }}
+                  />
+                </a>
+                <a title="live" href="https://www.twitcasting.tv/stellacolors_u">
+                  <img
+                    src={live}
+                    alt="live"
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
