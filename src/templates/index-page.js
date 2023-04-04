@@ -25,8 +25,14 @@ export const IndexPageTemplate = ({
           flexWrap: "wrap",
         }}
       >
-        <section style={{ width: "50%", boxSizing: "border-box", margin:16, padding: 8, backgroundColor: "rgba(255,255,255,0.7)" }} className="section section--gradient">
-          <div className="container">
+        <section style={{ width: "50%", boxSizing: "border-box", padding: 8, }} className="section section--gradient">
+          <div
+            style={{
+              margin: 16,
+              boxSizing: "border-box",
+              backgroundColor: "rgba(255,255,255,0.7)"
+            }}
+            className="container">
             <p
               style={{
                 fontSize: 32,
@@ -38,7 +44,13 @@ export const IndexPageTemplate = ({
           </div>
         </section>
         <section style={{ width: "50%", boxSizing: "border-box", margin: 16, padding: 8, backgroundColor: "rgba(255,255,255,0.7)" }} className="section section--gradient">
-          <div className="container">
+          <div
+            style={{
+              margin: 16,
+              boxSizing: "border-box",
+              backgroundColor: "rgba(255,255,255,0.7)"
+            }}
+            className="container">
             <p
               style={{
                 fontSize: 32,
