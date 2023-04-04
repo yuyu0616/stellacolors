@@ -74,7 +74,7 @@ const Footer = () => {
                 </section>
               </div>
               <div className="column is-4 social">
-                <a title="twitter" href="https://twitter.com">
+                <a title="twitter" href="https://twitter.com/StellaColors_u">
                   <img
                     className="fas fa-lg"
                     src={twitter}

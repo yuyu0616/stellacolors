@@ -29,6 +29,7 @@ export const IndexPageTemplate = ({
           <div
             style={{
               margin: 16,
+              padding: 16,
               boxSizing: "border-box",
               backgroundColor: "rgba(255,255,255,0.7)"
             }}
@@ -47,6 +48,7 @@ export const IndexPageTemplate = ({
           <div
             style={{
               margin: 16,
+              padding: 16,
               boxSizing: "border-box",
               backgroundColor: "rgba(255,255,255,0.7)"
             }}
